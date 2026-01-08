@@ -1,0 +1,7 @@
+# Ignorar tudo fora da pasta atual
+/*
+!/assets/
+!/index.html
+!/script.js
+!/style.css
+!/.gitignore

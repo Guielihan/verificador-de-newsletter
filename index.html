@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoDevs - Inscreva-se</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <!-- card principal -->
+        <div class="card">
+            <div class="card-header">
+                <h1 class="title">GoDevs</h1>
+                <p class="subtitle">Receba nossas novidades sem cair no <span class="highlight-spam">SPAM</span></p>
+            </div>
+
+            <!-- formulario -->
+            <form class="form" id="newsletterForm" novalidate>
+                <!-- grupo do input com status badge -->
+                <div class="input-wrapper">
+                    <div class="input-group">
+                        <label for="emailInput" class="visually-hidden">Seu melhor e-mail</label>
+                        
+                        <!-- input do e-mail -->
+                        <input 
+                            type="email" 
+                            id="emailInput" 
+                            class="email-input" 
+                            placeholder="seu@email.com"
+                            autocomplete="email"
+                            aria-describedby="helpText"
+                        >
+                        
+                        <!-- ícone do status -->
+                        <span class="input-icon" aria-hidden="true"></span>
+                    </div>
+                    
+                    <!-- status badge do lado -->
+                    <span class="status-badge" id="statusBadge">AGUARDANDO</span>
+                </div>
+
+                <!-- texto de ajuda -->
+                <p class="help-text" id="helpText" aria-live="polite">
+                    Digite seu e-mail para entrar na lista.
+                </p>
+
+                <!-- botão de inscrição -->
+                <button 
+                    type="submit" 
+                    class="submit-btn" 
+                    id="submitBtn" 
+                    disabled
+                >
+                    <span class="btn-text">Inscrever-se</span>
+                    <span class="btn-loader"></span>
+                </button>
+
+                <!-- mensagem do sucesso -->
+                <div class="success-message" id="successMessage" role="status" aria-live="polite">
+                    <span class="success-text">Pronto! Você está na lista. Bem-vindo(a)!</span>
+                </div>
+            </form>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+            <p>Missão do Dia: Verificador de Newsletter</p>
+            <a href="https://discord.com/users/1297971679737413632" 
+               class="discord-link" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               aria-label="Abrir meu Discord">
+                <img src="assets/discord.png" alt="Discord" class="discord-icon">
+            </a>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
