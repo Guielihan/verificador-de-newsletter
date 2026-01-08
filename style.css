@@ -471,13 +471,12 @@ body {
     height: 40px;
     display: block;
     transition: all var(--transition-normal);
-    mix-blend-mode: screen;
-    opacity: 0.85;
+    opacity: 0.9;
 }
 
 .discord-link:hover .discord-icon {
     opacity: 1;
-    filter: brightness(1.2) drop-shadow(0 0 12px rgba(88, 101, 242, 0.9));
+    filter: drop-shadow(0 0 12px rgba(88, 101, 242, 0.9));
     transform: scale(1.1);
 }
 
