@@ -472,6 +472,8 @@ body {
     display: block;
     opacity: 0.9;
     transition: all var(--transition-normal);
+    background: transparent;
+    border-radius: 8px;
 }
 
 .discord-link:hover .discord-icon {
